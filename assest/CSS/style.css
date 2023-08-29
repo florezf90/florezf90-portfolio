@@ -1,68 +1,236 @@
-* {
+/*variables*/
+:root{
 
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    --flexbox: flex;
+    --justify: flex-end; 
+    --try:var(--justify) var(--flexbox)
 }
+/* header edit ----------------------------------------------------*/
 
-header{
-
-    display: flex;
-    justify-content: space-between;
-    background-color: navy;
-    color: aliceblue;
-}
-.name {
-
-    padding: 20px 40px;
-}
-
-
-.header-sections {
-
-    display: flex;
-
-}
-
-.presentation{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+header  {
+     display: var(--flexbox); 
+    justify-content: var(--justify); 
+    gap: 4rem;
+    padding: 2%;
+    flex-basis: 100%;
+    background-color: gray;
+    flex-grow: 2;
     
 }
 
-.me img{
-
-    max-width: 480px;
-    padding-top: 40px;
+header h1 {
+   flex-grow: 1;
 }
 
-#content i{
 
-    padding: 15px 20px;
+
+/* nav edit ------------------------------------------------------------*/
+
+nav {
+
+    background-color: aquamarine;
+    display: var(--flexbox);
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 7%;
+    padding-top: 4%;
 }
 
-@media screen and (max-width: 900px) {
+.nav-content{
 
-    header {
+    display: var(--flexbox);
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 20%;
+    align-items: center;
+}
 
-         flex-direction: column;}
+  nav img {
 
-    .header-sections {
+    max-width: 350px;
+}
 
-         flex-direction: column;
-         align-items: center;}
+/*  main desmadre -------------------------------------------------------   */
 
-    .presentation{
+/* container ---------------------------------------------------------------*/
+main {
 
-         display: flex;
-         flex-wrap: wrap;
-         align-items: center; }
+    display: var(--flexbox);
+    flex-grow: 1;
+    gap: 5px;
+}
+/* aside // sidebar edit ------------------------------------------------------ */
+aside {
+    display: var(--flexbox);
+    flex: 2;
+    background-color: gold;
+    padding: 60px;
+    text-align: center;
+    flex-direction: column;
+    
+}
 
+aside h1{
+     display: var(--flexbox);
+     flex: 1;
+     justify-content: center;
+     align-items: center;
+
+}
+aside h2{
+
+    flex: 0.4;
+}
+
+aside h3 {
+
+    flex: 0.2;
+}
+
+/* main content // articles // sections edit ------------------------------- */
+.contenido {
+     display: var(--flexbox);
+     flex: 7;
+     background-color: darkred;
+     flex-direction: column;
+     align-items: center;
+     text-align: center;
+     gap: 9rem;
+
+}
+
+.card {
+     display: var(--flexbox);
+     align-items: center;
+     gap: 1rem;
+     flex-wrap: wrap;
+     border-style: solid;
+     max-width:  50%;
+      padding: 5%;
+     margin-bottom: 30%;
+}
+
+.card h3{
+     display: var(--flexbox);
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card button {
+
+    display: var(--flexbox);
+    flex-grow: 1;
+    
+}
+
+.card img {
+
+    width: 50%;
+}
+
+
+/* footer edit ----------------------------------------------------------------- */
+
+footer{
+
+    display: var(--flexbox);
+    justify-content: center;
+    background-color: gray;
+    padding: 5%;
+}
+
+
+/* media query 1 ----------------------------------------------------------------- */
+
+
+@media (max-width:800px) {
+
+    main {
+
+        display: var(--flexbox);
+        
+    }
+
+    aside {
+       visibility: hidden;
+       position: absolute;
     }
 
 
+}
+
+/* media  query-2 --------------------------------------------------------------- */
 
 
 
 
-    
+@media (max-width:600px) {
+
+    header {
+      display: var(--flexbox);
+      flex-grow: 1;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  main {
+
+      display: var(--flexbox);
+      flex-wrap: wrap;
+      flex-direction: column;
+      flex-grow: 1;
+  }
+
+  .contenido {
+
+      flex-grow: 2;
+  }
   
+  nav, header {
+
+      display: var(--flexbox);
+      flex-grow: 1;
+      flex-direction: column;
+      align-items: center;
+  }
+
+ .card img {
+  min-width: 100%;
+ }
+
+}
+
+
+html {
+
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
