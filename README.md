@@ -20,6 +20,11 @@ provided CSS techniques:
 https://www.youtube.com/@WebDevSimplified
 
 
+## live deployment link 
+
+https://florezf90.github.io/florezf90-portfolio/
+
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
