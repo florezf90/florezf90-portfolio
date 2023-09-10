@@ -25,7 +25,9 @@ https://www.youtube.com/@WebDevSimplified
 https://florezf90.github.io/florezf90-portfolio/
 
 
-## [Screenshot demo](./assest/photos/Screenshot%20demo.png)
+## LIVE deployment screenshot
+
+![Screenshot demo](./assest/photos/Screenshot%20demo.png)
 
 ## License
 
